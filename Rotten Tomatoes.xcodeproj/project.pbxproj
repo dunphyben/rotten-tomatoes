@@ -19,6 +19,8 @@
 		B593E1F5197B0D96009D4BDD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B593E1DD197B0D96009D4BDD /* UIKit.framework */; };
 		B593E1FD197B0D96009D4BDD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B593E1FB197B0D96009D4BDD /* InfoPlist.strings */; };
 		B593E1FF197B0D96009D4BDD /* Rotten_TomatoesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B593E1FE197B0D96009D4BDD /* Rotten_TomatoesTests.m */; };
+		B593E20B197B0DF0009D4BDD /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B593E209197B0DF0009D4BDD /* MovieViewController.m */; };
+		B593E20C197B0DF0009D4BDD /* MovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B593E20A197B0DF0009D4BDD /* MovieViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		B593E1FA197B0D96009D4BDD /* Rotten TomatoesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Rotten TomatoesTests-Info.plist"; sourceTree = "<group>"; };
 		B593E1FC197B0D96009D4BDD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B593E1FE197B0D96009D4BDD /* Rotten_TomatoesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rotten_TomatoesTests.m; sourceTree = "<group>"; };
+		B593E208197B0DF0009D4BDD /* MovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieViewController.h; sourceTree = "<group>"; };
+		B593E209197B0DF0009D4BDD /* MovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieViewController.m; sourceTree = "<group>"; };
+		B593E20A197B0DF0009D4BDD /* MovieViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +82,9 @@
 		B593E1CD197B0D95009D4BDD = {
 			isa = PBXGroup;
 			children = (
+				B593E208197B0DF0009D4BDD /* MovieViewController.h */,
+				B593E209197B0DF0009D4BDD /* MovieViewController.m */,
+				B593E20A197B0DF0009D4BDD /* MovieViewController.xib */,
 				B593E1DF197B0D96009D4BDD /* Rotten Tomatoes */,
 				B593E1F8197B0D96009D4BDD /* Rotten TomatoesTests */,
 				B593E1D8197B0D96009D4BDD /* Frameworks */,
@@ -219,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B593E20C197B0DF0009D4BDD /* MovieViewController.xib in Resources */,
 				B593E1E4197B0D96009D4BDD /* InfoPlist.strings in Resources */,
 				B593E1EC197B0D96009D4BDD /* Images.xcassets in Resources */,
 			);
@@ -240,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B593E1EA197B0D96009D4BDD /* AppDelegate.m in Sources */,
+				B593E20B197B0DF0009D4BDD /* MovieViewController.m in Sources */,
 				B593E1E6197B0D96009D4BDD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
