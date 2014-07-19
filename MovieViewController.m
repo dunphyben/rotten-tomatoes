@@ -10,7 +10,8 @@
 
 @interface MovieViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-
+@property (nonatomic, strong) NSArray *movies; //creates an array called movies
+// nonatomic means no lock on the variable. Nonatomic means not thread safe. App runs in a UI Main thread. Nonatomic means that it's only safe to run on one thread. Atomic mens it's safe to run on multiple threads at the same time. Atomic threads have a trade-off on performance.
 @end
 
 @implementation MovieViewController
@@ -32,7 +33,7 @@
     NSString *url = @"http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?apikey=duxgbnqmvd37e5m7xdv8w9xw%22";
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
                               [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError * connectionError) {
-        id object = [NSJSONSerialization JSONObjectWithData: data options:0 error:nil];
+        id object = [NSJSONSerialization JSONObjectWithData: data options:0 error:nil]; //^ indicates a block is about to follow. Blocks are functions inside of functions. The argument after the carrot ^() is waht's inside the block.
         //self.movies = object[@"movies"];
         [self.tableView reloadData];
                               }];
