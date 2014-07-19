@@ -13,8 +13,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    MovieViewController *movieViewController = [[MovieViewController alloc] init];
+    UINavigationController *movieNavigationController = [[UINavigationController alloc] initWithRootViewController:movieViewController];
+    
+    movieViewController.title = @"Movies";
+    
+    self.window.rootViewController = movieNavigationController;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
