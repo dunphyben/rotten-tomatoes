@@ -9,6 +9,7 @@
 #import "MovieViewController.h"
 
 @interface MovieViewController ()
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
