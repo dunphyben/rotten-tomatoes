@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MovieViewController.m"
-            timestampString = "427499189.479038"
+            timestampString = "427500465.627692"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "@implementation MovieViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MovieViewController.m"
-            timestampString = "427499189.479038"
+            timestampString = "427500465.627692"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67">
+            startingLineNumber = "76"
+            endingLineNumber = "76">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -40,11 +40,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MovieViewController.m"
-            timestampString = "427498688.750044"
+            timestampString = "427500465.627692"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
@@ -56,12 +56,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MovieViewController.m"
-            timestampString = "427498794.476024"
+            timestampString = "427500465.627692"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieViewController.m"
+            timestampString = "427500465.627692"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

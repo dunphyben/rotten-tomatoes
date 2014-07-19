@@ -7,6 +7,7 @@
 //
 
 #import "MovieViewController.h"
+#import "MovieCellTableViewCell.h"
 
 @interface MovieViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -31,6 +32,8 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     NSString *url = @"http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?apikey=duxgbnqmvd37e5m7xdv8w9xw";
+    [self.tableView registerNib:[UINib nibWithNibName:@"MovieCellTableViewCell" bundle:nil] forCellReuseIdentifier:@"MovieCellTableViewCell"];
+    
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
                               [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError * connectionError) {
         id object = [NSJSONSerialization JSONObjectWithData: data options:0 error:nil]; //^ indicates a block is about to follow. Blocks are functions inside of functions. The argument after the carrot ^() is waht's inside the block.
@@ -49,10 +52,16 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [[UITableViewCell alloc] init];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@", self.movies[indexPath.row][@"title"]];
+    MovieCellTableViewCell *cell = [[MovieCellTableViewCell alloc] init];
+    NSDictionary *movie = self.movies[indexPath.row];
+    
+    cell.titleLabel.text = movie[@"title"];
+    cell.synopsisLabel.text = movie[@"synopsis"];
+    
     return cell;
 }
+
+// If get "Use of undeclared identifier 'foo', resolve by:
 
 
 - (void)didReceiveMemoryWarning
