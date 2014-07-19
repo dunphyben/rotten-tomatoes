@@ -8,6 +8,7 @@
 
 #import "MovieViewController.h"
 #import "MovieCellTableViewCell.h"
+#import "UIImageView+AFNetworking.h"
 
 @interface MovieViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
