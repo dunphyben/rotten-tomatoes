@@ -52,7 +52,7 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    MovieCellTableViewCell *cell = [[MovieCellTableViewCell alloc] init];
+    MovieCellTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MovieCellTableViewCell"];
     NSDictionary *movie = self.movies[indexPath.row];
     
     cell.titleLabel.text = movie[@"title"];
