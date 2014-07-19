@@ -30,11 +30,11 @@
     [super viewDidLoad];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    NSString *url = @"http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?apikey=duxgbnqmvd37e5m7xdv8w9xw%22";
+    NSString *url = @"http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?apikey=duxgbnqmvd37e5m7xdv8w9xw";
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
                               [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError * connectionError) {
         id object = [NSJSONSerialization JSONObjectWithData: data options:0 error:nil]; //^ indicates a block is about to follow. Blocks are functions inside of functions. The argument after the carrot ^() is waht's inside the block.
-        //self.movies = object[@"movies"];
+        self.movies = object[@"movies"];
         [self.tableView reloadData];
                               }];
         
