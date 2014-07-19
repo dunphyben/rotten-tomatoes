@@ -37,6 +37,8 @@
         self.movies = object[@"movies"];
         [self.tableView reloadData];
                               }];
+    
+    // po self.movies[0][@"year"] --> Type this in the debugger
         
     // Do any additional setup after loading the view from its nib.
 }
@@ -48,7 +50,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [[UITableViewCell alloc] init];
-    cell.textLabel.text = @"Hello";
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", self.movies[indexPath.row][@"title"]];
     return cell;
 }
 
