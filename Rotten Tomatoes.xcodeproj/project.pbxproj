@@ -21,6 +21,8 @@
 		B593E1FF197B0D96009D4BDD /* Rotten_TomatoesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B593E1FE197B0D96009D4BDD /* Rotten_TomatoesTests.m */; };
 		B593E20B197B0DF0009D4BDD /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B593E209197B0DF0009D4BDD /* MovieViewController.m */; };
 		B593E20C197B0DF0009D4BDD /* MovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B593E20A197B0DF0009D4BDD /* MovieViewController.xib */; };
+		B593E210197B1F32009D4BDD /* MovieCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B593E20E197B1F32009D4BDD /* MovieCellTableViewCell.m */; };
+		B593E211197B1F32009D4BDD /* MovieCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B593E20F197B1F32009D4BDD /* MovieCellTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		B593E208197B0DF0009D4BDD /* MovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieViewController.h; sourceTree = "<group>"; };
 		B593E209197B0DF0009D4BDD /* MovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieViewController.m; sourceTree = "<group>"; };
 		B593E20A197B0DF0009D4BDD /* MovieViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieViewController.xib; sourceTree = "<group>"; };
+		B593E20D197B1F32009D4BDD /* MovieCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieCellTableViewCell.h; sourceTree = "<group>"; };
+		B593E20E197B1F32009D4BDD /* MovieCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCellTableViewCell.m; sourceTree = "<group>"; };
+		B593E20F197B1F32009D4BDD /* MovieCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieCellTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +87,9 @@
 		B593E1CD197B0D95009D4BDD = {
 			isa = PBXGroup;
 			children = (
+				B593E20D197B1F32009D4BDD /* MovieCellTableViewCell.h */,
+				B593E20E197B1F32009D4BDD /* MovieCellTableViewCell.m */,
+				B593E20F197B1F32009D4BDD /* MovieCellTableViewCell.xib */,
 				B593E208197B0DF0009D4BDD /* MovieViewController.h */,
 				B593E209197B0DF0009D4BDD /* MovieViewController.m */,
 				B593E20A197B0DF0009D4BDD /* MovieViewController.xib */,
@@ -229,6 +237,7 @@
 			files = (
 				B593E20C197B0DF0009D4BDD /* MovieViewController.xib in Resources */,
 				B593E1E4197B0D96009D4BDD /* InfoPlist.strings in Resources */,
+				B593E211197B1F32009D4BDD /* MovieCellTableViewCell.xib in Resources */,
 				B593E1EC197B0D96009D4BDD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +259,7 @@
 			files = (
 				B593E1EA197B0D96009D4BDD /* AppDelegate.m in Sources */,
 				B593E20B197B0DF0009D4BDD /* MovieViewController.m in Sources */,
+				B593E210197B1F32009D4BDD /* MovieCellTableViewCell.m in Sources */,
 				B593E1E6197B0D96009D4BDD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
